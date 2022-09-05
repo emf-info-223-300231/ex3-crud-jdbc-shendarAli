@@ -39,7 +39,6 @@ public class DbWorker implements DbWorkerItf {
         } catch (SQLException ex) {
             throw new MyDBException(SystemLib.getFullMethodName(), ex.getMessage());
         }
-
     }
 
     @Override
