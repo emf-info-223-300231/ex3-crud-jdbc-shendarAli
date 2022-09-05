@@ -1,6 +1,7 @@
 package app.beans;
 
 import app.helpers.DateTimeLib;
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -49,6 +50,10 @@ public class Personne {
        this("Federer", "Roger", DateTimeLib.createDate(8, 8, 1981), 
                17, "Rue du Nord", 4001, "Bâle", true, 1000000d,DateTimeLib.createDate(8, 8, 1981));
   }
+
+    public Personne(Personne personne) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 
   public double getSalaire() {
@@ -143,6 +148,10 @@ public class Personne {
   public String toString() {
     return "Personne: " + pkPers + ", nom=" + nom + ", prenom=" + prenom;
   }
+
+    public void setDateNaissance(LocalDate dateNee) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
   
   
 }

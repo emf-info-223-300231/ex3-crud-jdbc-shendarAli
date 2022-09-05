@@ -43,7 +43,8 @@ public class DbWorkerTest {
   public void b_testerLirePersonnes() throws MyDBException {
     System.out.println(SystemLib.getCurrentMethod());
     List<Personne> personnes = dbWrk.lirePersonnes();
-    manPers.setPersonnes(personnes);
+    
+    manPers.setPersonne(personnes);
     boolean ok = !personnes.isEmpty();
     if (ok) {
       int cnt = 0;
